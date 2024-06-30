@@ -1,0 +1,18 @@
+﻿@model CategoryDto
+
+@{
+    ViewData["Title"] = "Kategori Ekle";
+}
+
+<h2 class="my-4">Kategori Ekle</h2>
+
+<form asp-action="AddCategory" method="post" enctype="multipart/form-data">
+   
+    <div class="form-group">
+        <label>Kategori Adı</label>
+        <input type="text" class="form-control" asp-for="Name" />
+    </div>
+
+   <br />
+    <button type="submit" class="btn btn-primary">Ekle</button>
+</form>
